@@ -1,6 +1,6 @@
-import React from 'react';
-import { FeatureType } from '../types';
-import * as LucideIcons from 'lucide-react';
+import * as LucideIcons from "lucide-react";
+import React from "react";
+import { FeatureType } from "../types";
 
 interface FeatureCardProps {
   feature: FeatureType;
@@ -8,7 +8,11 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ feature }) => {
   // Dynamically select the icon based on the feature's icon name
-  const IconComponent = LucideIcons[feature.icon as keyof typeof LucideIcons];
+  const IconComponent = LucideIcons[
+    feature.icon as keyof typeof LucideIcons
+  ] as React.ComponentType<{
+    className?: string;
+  }>;
 
   return (
     <div className="bg-amber-50 rounded-lg p-6 transition-all duration-300 hover:shadow-md">

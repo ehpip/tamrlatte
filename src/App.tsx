@@ -1,19 +1,19 @@
-import React, { useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './sections/Hero';
-import About from './sections/About';
-import Benefits from './sections/Benefits';
-import Testimonials from './sections/Testimonials';
-import StoreLocator from './sections/StoreLocator';
-import Newsletter from './components/Newsletter';
-import Footer from './components/Footer';
+import { useEffect } from "react";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Newsletter from "./components/Newsletter";
+import About from "./sections/About";
+import Benefits from "./sections/Benefits";
+import Hero from "./sections/Hero";
+import StoreLocator from "./sections/StoreLocator";
+import Testimonials from "./sections/Testimonials";
 
 function App() {
   useEffect(() => {
     // Update the document title
-    document.title = 'TamrLatte | Premium Date Milk Beverage';
+    document.title = "TamrLatte | Premium Date Milk Beverage";
   }, []);
-  
+
   return (
     <div className="min-h-screen font-sans">
       <Navbar />
