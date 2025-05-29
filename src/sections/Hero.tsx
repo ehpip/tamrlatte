@@ -55,13 +55,13 @@ const Hero: React.FC = () => {
           <div className="order-1 md:order-2 relative animate-float">
             <div className="relative">
               <img
-                src="public/images/tamrlatte_m.jpg"
+                src="/images/tamrlatte_m.jpg"
                 alt="TamrLatte bottle"
                 className="rounded-2xl shadow-2xl object-cover max-h-[600px]"
               />
               <div className="absolute -bottom-6 -right-6 bg-white rounded-full shadow-lg p-4 transform rotate-12">
                 <img
-                  src="public/images/sukkari_date.jpg"
+                  src="/images/sukkari_date.jpg"
                   alt="Medjool dates"
                   className="w-24 h-24 rounded-full object-cover"
                 />

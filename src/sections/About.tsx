@@ -16,7 +16,7 @@ const About: React.FC = () => {
           <div className="relative">
             <div className="relative z-10 rounded-lg overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-[1.02]">
               <img
-                src="public/images/tamrlatte_mix.jpg"
+                src="/images/tamrlatte_mix.jpg"
                 alt="TamrLatte origin story"
                 className="w-full h-auto"
               />
